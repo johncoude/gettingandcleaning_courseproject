@@ -1,12 +1,12 @@
 # gettingandcleaning_courseproject
 ## code book
 
-##Data
+### Data
 The data originally comes from data collected from the accelerometers from a Samsung Galaxy S smartphone. A full description is available at the site where the original data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-##process
+### process
 however the original data is not tidy, hence the creation of this script and the output of the tidy dataset tidy_data.csv
 
 the tidy data set comprises 180 observations of our 30 subjects and 6 activities, i.e. 1 observation per subject per activity. The variables are the means of the observations of the original study for each combination subject/activity, and we kept only values that represented means or standard variations as represented in the list by "mean" or "std" respectively.
