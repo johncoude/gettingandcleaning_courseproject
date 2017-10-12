@@ -1,14 +1,24 @@
 # gettingandcleaning_courseproject
 ## code book
 
+##Data
 The data originally comes from data collected from the accelerometers from a Samsung Galaxy S smartphone. A full description is available at the site where the original data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+##process
 however the original data is not tidy, hence the creation of this script and the output of the tidy dataset tidy_data.csv
 
 the tidy data set comprises 180 observations of our 30 subjects and 6 activities, i.e. 1 observation per subject per activity. The variables are the means of the observations of the original study for each combination subject/activity, and we kept only values that represented means or standard variations as represented in the list by "mean" or "std" respectively.
 
+moreover the variable names have been clarified for readability :
+
+Variable "subject" is quite self-explanatory, variable "activity" as a integer has been replaced by the description of the activity as a factor as per activity_labels.txt
+
+the prefixes "t" and "f" have been replaced by "TimeDomain" and "FrequencyDomain" respectively.
+Characters such as "()", "-" have been deleted or replaced by underscores to improve readabiltiy.
+
+here is the list of the selected variables
                                  
  "TimeDomain_BodyAcc_mean_X"                    "TimeDomain_BodyAcc_mean_Y"                   
  "TimeDomain_BodyAcc_mean_Z"                    "TimeDomain_GravityAcc_mean_X"                
