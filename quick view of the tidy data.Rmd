@@ -1,0 +1,16 @@
+---
+title: "quick view of the tidy dat"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r }
+df <- read.csv("tidy_data.csv")
+head(df[,1:5], 18)
+```
+
+

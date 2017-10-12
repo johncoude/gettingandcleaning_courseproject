@@ -1,6 +1,6 @@
 library(dplyr)
 
-setwd("C:/Users/john/Desktop/DataScienceSpecialization/GettingAndCleaningData/week4/CourseProject/gettingandcleaning_courseproject")
+#setwd("C:/Users/john/Desktop/DataScienceSpecialization/GettingAndCleaningData/week4/CourseProject/gettingandcleaning_courseproject")
 
 if(!file.exists("./wearable.zip")){
         download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
@@ -53,4 +53,4 @@ tidy_data <- meanstd_set %>%
         group_by(subject,activity) %>% 
         summarize_all(mean)
 
-write.csv(tidy_data, "tidy_data.csv")
+write.csv(tidy_data, "tidy_data.csv", row.names = FALSE)
