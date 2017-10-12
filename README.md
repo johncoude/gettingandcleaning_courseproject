@@ -11,4 +11,4 @@ Please select your work directory manually and run the script run_analysis.R at 
 
 -the content of the tidy data is written in the output file tidy_data.csv in the working directory
 
--the file quick view of the tidy data shows an extract of the generated tidy data
+-opening the file tidy_data.csv in github will allow you to see an extract of the tidy data generated
